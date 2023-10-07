@@ -36,7 +36,7 @@ const Register = () => {
     }
     return (
 
-        <div className="mx-auto max-w-xl border mt-10">
+        <div className="mx-auto max-w-xl border rounded-xl mb-10 mt-10">
             <div>
                 <h2 className="text-2xl my-3 text-center">Register your account</h2>
 

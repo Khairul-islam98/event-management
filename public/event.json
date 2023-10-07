@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Consumer Electronics Show (CES)",
+        "image": "https://i.ibb.co/SrhG8NJ/Consumer-Electronics-Show-CES.webp",
+        "price": "$200 - $1,000 (depending on registration type)",
+        "description": "CES is one of the largest tech expos globally, showcasing the latest consumer electronics, innovative technologies, and cutting-edge gadgets."
+     },
+     {
+        "id": 2,
+        "name": "Game Developers Conference (GDC)",
+        "image": "https://i.ibb.co/4gTR524/Game-Developers-Conference-GDC.webp",
+        "price": "$699 - $2,499 (early bird and regular passes)",
+        "description": "GDC is the premier event for professionals in the video game industry, featuring discussions on game development, design, and industry trends."
+     },
+     {
+        "id": 3,
+        "name": "TechCrunch Disrupt",
+        "image": "https://i.ibb.co/s1c7RbJ/Tech-Crunch-Disrupt.jpg",
+        "price": "$249 - $2,999 (depending on ticket type)",
+        "description": "TechCrunch Disrupt combines a tech conference and hackathon, offering startups a platform to showcase innovations and compete in a hackathon."
+     },
+     {
+        "id": 4,
+        "name": "Electronic Entertainment Expo (E3)",
+        "image": "https://i.ibb.co/CKM2tXL/Electronic-Entertainment-Expo-E3.jpg",
+        "price": "Price varies; media passes and industry passes available.",
+        "description": "E3 is a major gaming expo where leading video game companies unveil their latest titles, consoles, and gaming technology."
+     },
+     {
+        "id": 5,
+        "name": "AngelHack",
+        "image": "https://i.ibb.co/0BqD5T1/Angel-Hack.jpg",
+        "price": "Free to participate in hackathons; costs may apply for certain events.",
+        "description": "AngelHack is a global hackathon series that brings together developers, designers, and entrepreneurs to create innovative solutions."
+     },
+     {
+        "id": 6,
+        "name": "PAX (Penny Arcade Expo)",
+        "image": "https://i.ibb.co/C7Yy10r/PAX-Penny-Arcade-Expo.jpg",
+        "price": "$50 - $220 (single-day and weekend passes available)",
+        "description": "PAX is a series of gaming conventions celebrating video games, tabletop games, and nerd culture with panels, tournaments, and more."
+     }
+]

@@ -15,15 +15,15 @@ const Login = () => {
             .then(() => {
                 toast.success('Logged successful!')
             })
-            .catch(() => toast.error("Don't have a account"))
+            .catch(() => toast.error("An error occurred while logging in."))
     }
 
     return (
-        <div className="mx-auto max-w-xl border mt-10">
+        <div className="mx-auto max-w-xl border rounded-xl mb-10 mt-10">
             <div>
                 <h2 className="text-2xl my-3 text-center">Please Login</h2>
 
-                <form onSubmit={handleLogin} className='md:w-3/4 lg:w-1/2 mx-auto'>
+                <form onSubmit={handleLogin} className='md:w-3/4 lg:w-3/4 mx-auto'>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Email</span>

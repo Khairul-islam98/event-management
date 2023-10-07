@@ -11,9 +11,9 @@ const Eventshow = () => {
 
     return (
         <div className=''>
-            <Marquee pauseOnHover={true}  speed={120}>
+            <Marquee pauseOnHover={true} direction='right'  speed={100}>
                 {
-                    eventShow.map(event =>  <img className='w-80 h-60 border' key={event.id} src={event.img} />)
+                    eventShow.map(event =>  <img className='w-50 h-40 border  rounded-lg mr-2' key={event.id} src={event.img} />)
                 }
             </Marquee>
         </div>
