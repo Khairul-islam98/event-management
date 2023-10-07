@@ -10,8 +10,8 @@ const Eventshow = () => {
     },[])
 
     return (
-        <div className=''>
-            <Marquee pauseOnHover={true} direction='right'  speed={100}>
+        <div className='py-10'>
+            <Marquee  direction='right'  speed={100}>
                 {
                     eventShow.map(event =>  <img className='w-50 h-40 border  rounded-lg mr-2' key={event.id} src={event.img} />)
                 }
