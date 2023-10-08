@@ -5,15 +5,15 @@ const Eventshow = () => {
     const [eventShow, setEventShow] = useState([])
     useEffect(() => {
         fetch('eventshow.json')
-        .then(res => res.json())
-        .then(data => setEventShow(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setEventShow(data))
+    }, [])
 
     return (
         <div className='py-10'>
-            <Marquee  direction='right'  speed={100}>
+            <Marquee direction='right' speed={100}>
                 {
-                    eventShow.map(event =>  <img className='w-50 h-40 border  rounded-lg mr-2' key={event.id} src={event.img} />)
+                    eventShow.map(event => <img className='w-50 h-40 border  rounded-lg mr-2' key={event.id} src={event.img} />)
                 }
             </Marquee>
         </div>
@@ -21,3 +21,4 @@ const Eventshow = () => {
 };
 
 export default Eventshow;
+

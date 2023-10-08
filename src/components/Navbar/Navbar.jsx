@@ -25,12 +25,36 @@ const Navbar = () => {
             Home
         </NavLink></li>
         <li><NavLink
+            to="/gallery"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-red-500 font-bold underline" : ""
+            }
+        >
+            Gallery
+        </NavLink></li>
+        <li><NavLink
+            to="/contactus"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-red-500 font-bold underline" : ""
+            }
+        >
+            Contact
+        </NavLink></li>
+        <li><NavLink
             to="/login"
             className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "text-red-500 font-bold underline" : ""
             }
         >
             Login
+        </NavLink></li>
+        <li><NavLink
+            to="/register"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-red-500 font-bold underline" : ""
+            }
+        >
+            Register
         </NavLink></li>
     </>
 
@@ -56,7 +80,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 <div className="dropdown dropdown-end">
-                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                <label tabIndex={0} className="btn btn-ghost btn-circle avatar online">
                     <div className="w-10 rounded-full">
                             {
                                 user ? <img src={user.photoURL} /> : 

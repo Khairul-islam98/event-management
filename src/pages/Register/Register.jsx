@@ -14,8 +14,11 @@ const Register = () => {
         const photo = form.get('photo')
         const email = form.get('email')
         const password = form.get('password')
-        if (!/(?=.*[A-Z])/.test(password) && !/(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\-])/.test(password)) {
-            toast.error("Password must contain at least one capital letter & one special character.")
+        if (!/(?=.*[A-Z])/.test(password) ) {
+            toast.error("Password must contain at least one capital letter .")
+            return
+        }else if(!/(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\-])/.test(password)){
+            toast.error("one special character")
             return
         }
         else if (password.length < 6) {
@@ -29,10 +32,10 @@ const Register = () => {
                 updateProfile(result.user, {
                     displayName: name,
                     photoURL: photo
+                    
                 })
             })
             .catch(() => toast.error("Already registered"))
-
     }
     return (
 

@@ -1,0 +1,52 @@
+{
+  "people": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "img": "https://i.ibb.co/JFKFvLG/3.jpg",
+      "description": "John Doe is a software engineer with over 10 years of experience in web development. He enjoys coding and learning about new technologies in his free time.",
+      "working_position": "CEO",
+      "position_description": "As the CEO, John oversees the strategic direction and overall operations of the company. He leads the executive team in making key decisions and setting company goals."
+    },
+    {
+      "id": 2,
+      "name": "Alice Smith",
+      "img": "https://i.ibb.co/ZY4JDJW/1.jpg",
+      "description": "Alice Smith is a passionate artist who specializes in watercolor painting. Her artwork has been exhibited in several galleries across the country.",
+      "working_position": "Manager",
+      "position_description": "As a Manager, Alice is responsible for overseeing and coordinating various aspects of the organization. She ensures that projects run smoothly and meet their objectives."
+    },
+    {
+      "id": 3,
+      "name": "Bob Johnson",
+      "img": "https://i.ibb.co/9cfLp3F/6.jpg",
+      "description": "Bob Johnson is a dedicated environmentalist and wildlife photographer. He travels the world to capture the beauty of nature and raise awareness about conservation.",
+      "working_position": "Environmental Designer",
+      "position_description": "Bob works as an Environmental Designer, creating digital landscapes and ecosystems for video games. He also promotes conservation messages through his work."
+    },
+    {
+      "id": 4,
+      "name": "Eva Martinez",
+      "img": "https://i.ibb.co/QjPWJH0/4.jpg",
+      "description": "Eva Martinez is a chef and food blogger known for her unique fusion recipes. She enjoys experimenting with different cuisines and sharing her creations online.",
+      "working_position": "Tech and Gaming Food Critic",
+      "position_description": "Eva serves as a Tech and Gaming Food Critic, providing insightful reviews and analysis of in-game culinary experiences and food-related content."
+    },
+    {
+      "id": 5,
+      "name": "David Lee",
+      "img": "https://i.ibb.co/CK4xL0q/5.jpg",
+      "description": "David Lee is a fitness trainer and nutritionist. He helps people achieve their health and fitness goals through personalized workout plans and diet guidance.",
+      "working_position": "Tech and Gaming Fitness Advisor",
+      "position_description": "David works as a Tech and Gaming Fitness Advisor, ensuring that in-game fitness and health elements are accurate and promoting a healthy gaming lifestyle."
+    },
+    {
+      "id": 6,
+      "name": "Sarah Adams",
+      "img": "https://i.ibb.co/H7LNYJh/2.jpg",
+      "description": "Sarah Adams is a travel enthusiast and travel blogger. She documents her adventures and provides travel tips for fellow wanderers.",
+      "working_position": "Tech and Gaming Travel Reporter",
+      "position_description": "Sarah's role as a Tech and Gaming Travel Reporter involves exploring virtual worlds, reporting on in-game travel destinations, and offering travel tips for gamers."
+    }
+  ]
+}

@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
 import { AuthContext } from '../../provider/AuthProvider';
 
 const Login = () => {
     const { signIn } = useContext(AuthContext)
+    const location = useLocation()
+    const navigate = useNavigate()
 
     const handleLogin = e => {
         e.preventDefault()
@@ -14,6 +16,7 @@ const Login = () => {
         signIn(email, password)
             .then(() => {
                 toast.success('Logged successful!')
+                navigate(location?.state ? location.state : '/')
             })
             .catch(() => toast.error("An error occurred while logging in."))
     }

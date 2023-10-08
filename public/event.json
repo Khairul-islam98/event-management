@@ -1,44 +1,44 @@
 [
     {
         "id": 1,
-        "name": "Consumer Electronics Show (CES)",
-        "image": "https://i.ibb.co/SrhG8NJ/Consumer-Electronics-Show-CES.webp",
-        "price": "$200 - $1,000 (depending on registration type)",
-        "description": "CES is one of the largest tech expos globally, showcasing the latest consumer electronics, innovative technologies, and cutting-edge gadgets."
+        "name": "Tech Conferences and Expos",
+        "image": "https://i.ibb.co/7QJFB0C/Tech-Conferences-and-Expos.jpg",
+        "price": "$549 - $3,999",
+        "description": "Tech Expo 2023 is a premier technology conference that brings together industry leaders, innovators, and enthusiasts from around the world. Join us to explore the latest trends in AI, blockchain, cybersecurity, and more."
      },
      {
         "id": 2,
         "name": "Game Developers Conference (GDC)",
         "image": "https://i.ibb.co/4gTR524/Game-Developers-Conference-GDC.webp",
-        "price": "$699 - $2,499 (early bird and regular passes)",
-        "description": "GDC is the premier event for professionals in the video game industry, featuring discussions on game development, design, and industry trends."
+        "price": "$699 - $2,499",
+        "description": "GDC is the ultimate gathering for professionals within the video game industry. This premier event offers a diverse array of discussions, presentations, and workshops on game development, design, and industry trends. Game enthusiasts, developers, and creators from around the world converge here to share insights, collaborate on projects, and stay ahead of the constantly evolving gaming landscape."
      },
      {
         "id": 3,
-        "name": "TechCrunch Disrupt",
-        "image": "https://i.ibb.co/s1c7RbJ/Tech-Crunch-Disrupt.jpg",
-        "price": "$249 - $2,999 (depending on ticket type)",
-        "description": "TechCrunch Disrupt combines a tech conference and hackathon, offering startups a platform to showcase innovations and compete in a hackathon."
+        "name": "CodeJam Hackathon 2023",
+        "image": "https://i.ibb.co/MfVyY7M/original.png",
+        "price": "$450 - $3500",
+        "description": "Welcome to the CodeJam Hackathon 2023, where innovation and coding prowess converge for an unforgettable 48-hour experience! Immerse yourself in a dynamic environment filled with passionate developers, engineers, and creative problem solvers. During this hackathon, you'll have the opportunity to collaborate on real-world challenges, leverage the latest technologies, and turn your ideas into tangible solutions."
      },
      {
         "id": 4,
         "name": "Electronic Entertainment Expo (E3)",
         "image": "https://i.ibb.co/CKM2tXL/Electronic-Entertainment-Expo-E3.jpg",
-        "price": "Price varies; media passes and industry passes available.",
-        "description": "E3 is a major gaming expo where leading video game companies unveil their latest titles, consoles, and gaming technology."
+        "price": "$400 - $3200",
+        "description": "E3, the Electronic Entertainment Expo, is the ultimate pilgrimage for gamers and industry insiders. This gaming extravaganza provides a stage where leading video game companies unveil their latest titles, gaming consoles, and technological marvels. Gamers and fans eagerly anticipate E3 to get a glimpse of the future of gaming, attend press conferences, and immerse themselves in the thrilling world of interactive entertainment."
      },
      {
         "id": 5,
-        "name": "AngelHack",
-        "image": "https://i.ibb.co/0BqD5T1/Angel-Hack.jpg",
-        "price": "Free to participate in hackathons; costs may apply for certain events.",
-        "description": "AngelHack is a global hackathon series that brings together developers, designers, and entrepreneurs to create innovative solutions."
+        "name": "Consumer Electronics Show (CES)",
+        "image": "https://i.ibb.co/SrhG8NJ/Consumer-Electronics-Show-CES.webp",
+        "price": "$$200 - $1,000",
+        "description": "CES stands as one of the globe's most prominent tech expos, where the future of consumer electronics comes to life. This annual event serves as a nexus for innovation, boasting the latest in cutting-edge gadgets, revolutionary technologies, and groundbreaking electronic advancements. From state-of-the-art televisions to smart home devices, CES provides a platform for industry giants and startups alike to showcase their vision of the tech world's tomorrow."
      },
      {
         "id": 6,
-        "name": "PAX (Penny Arcade Expo)",
-        "image": "https://i.ibb.co/C7Yy10r/PAX-Penny-Arcade-Expo.jpg",
-        "price": "$50 - $220 (single-day and weekend passes available)",
-        "description": "PAX is a series of gaming conventions celebrating video games, tabletop games, and nerd culture with panels, tournaments, and more."
+        "name": "TechCrunch Disrupt",
+        "image": "https://i.ibb.co/s1c7RbJ/Tech-Crunch-Disrupt.jpg",
+        "price": "$249 - $2,999",
+        "description": "TechCrunch Disrupt seamlessly melds a tech conference with an exhilarating hackathon. This event serves as a launchpad for startups, offering them a golden opportunity to showcase their cutting-edge innovations, secure funding, and participate in an intense hackathon competition. Tech enthusiasts, investors, and entrepreneurs come together to witness the birth of groundbreaking technologies and witness the tech world's future disruptors."
      }
 ]
