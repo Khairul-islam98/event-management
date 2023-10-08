@@ -81,7 +81,7 @@ const Register = () => {
                 </form>
                 <p className='text-center py-5'>Already have an account? <Link to='/login' className='text-blue-600 font-bold'>Login</Link></p>
             </div>
-            <p className='flex justify-center items-center gap-6'>
+            <p className='flex justify-center items-center gap-2'>
                 <button className='btn bg-pink-500 text-white'>Google</button>
                 <button className='btn bg-pink-500 text-white'>Github</button>
                 <button className='btn bg-pink-500 text-white'>Twitter</button>

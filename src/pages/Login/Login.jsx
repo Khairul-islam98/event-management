@@ -50,7 +50,7 @@ const Login = () => {
                 </form>
                 <p className='text-center py-5'>Don't have an account <Link to='/register' className='text-blue-600 font-bold'>Register</Link></p>
             </div>
-            <p className='flex justify-center items-center gap-6'>
+            <p className='flex justify-center items-center gap-2'>
                 <button className='btn bg-pink-500 text-white'>Google</button>
                 <button className='btn bg-pink-500 text-white'>Github</button>
                 <button className='btn bg-pink-500 text-white'>Twitter</button>

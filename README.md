@@ -1,3 +1,8 @@
+# Tech and Gaming Events
+
+ Live link: https://event-management-auth-2ff1b.web.app
+
+
 # Project Features
 1. A user-friendly login and registration  system that allows websites visitors.
 
