@@ -18,7 +18,8 @@ const Login = () => {
                 toast.success('Logged successful!')
                 navigate(location?.state ? location.state : '/')
             })
-            .catch(() => toast.error("An error occurred while logging in."))
+            .catch((error) => toast.error("An error occurred while logging in."))
+            
     }
 
     return (
@@ -54,7 +55,7 @@ const Login = () => {
                 <button className='btn bg-pink-500 text-white'>Github</button>
                 <button className='btn bg-pink-500 text-white'>Twitter</button>
             </p>
-            <div><Toaster/></div>
+            <div><Toaster /></div>
         </div>
     );
 };

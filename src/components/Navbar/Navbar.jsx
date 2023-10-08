@@ -83,7 +83,7 @@ const Navbar = () => {
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar online">
                     <div className="w-10 rounded-full">
                             {
-                                user ? <img src={user.photoURL} /> : 
+                                user ? <img src={user?.photoURL} /> : 
                                 <img src={userImg} />
 
                             }

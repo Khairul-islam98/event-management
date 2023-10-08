@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 import { updateProfile } from 'firebase/auth';
 import toast, { Toaster } from 'react-hot-toast';
 
 const Register = () => {
     const { createUser } = useContext(AuthContext)
+    const location = useLocation()
+    const navigate = useNavigate()
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -29,6 +31,7 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 toast.success('Registration successful!')
+                navigate(location?.state ? location.state : '/')
                 updateProfile(result.user, {
                     displayName: name,
                     photoURL: photo
