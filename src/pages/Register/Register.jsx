@@ -17,7 +17,7 @@ const Register = () => {
         const email = form.get('email')
         const password = form.get('password')
         if (!/(?=.*[A-Z])/.test(password)) {
-            toast.error("Password must contain at least one capital letter .")
+            toast.error("Password must contain at least one capital letter.")
             return
         } else if (!/(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\-])/.test(password)) {
             toast.error("one special character")
@@ -36,17 +36,17 @@ const Register = () => {
                     displayName: name,
                     photoURL: photo,
                 })
-                
+
 
             })
-            .catch(() => toast.error("Already registered"))        
+            .catch(() => toast.error("Already registered"))
     }
     const handleGoogleSingIn = () => {
         signInGoogle()
             .then(() => {
                 toast.success('successful!')
                 navigate(location?.state ? location.state : '/')
-                
+
             })
             .catch(() => toast.error("Can't sign in to your Account"))
     }
@@ -55,7 +55,7 @@ const Register = () => {
             .then(() => {
                 toast.success('successful!')
                 navigate(location?.state ? location.state : '/')
-                
+
             })
             .catch(() => toast.error("Can't sign in to your Account"))
     }
@@ -103,9 +103,7 @@ const Register = () => {
             <p className='flex justify-center items-center gap-2'>
                 <button onClick={handleGoogleSingIn} className='btn bg-pink-500 text-white'>Google</button>
                 <button onClick={handleGithubSingIn} className='btn bg-pink-500 text-white'>Github</button>
-                
             </p>
-            <div><Toaster /></div>
         </div>
     );
 };

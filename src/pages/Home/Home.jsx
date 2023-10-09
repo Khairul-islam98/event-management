@@ -41,7 +41,8 @@ const Home = () => {
                 <div>
                     <TeamMember></TeamMember>
                 </div>
-                <div>
+                <div data-aos="fade-up"
+                    data-aos-duration="3000">
                     <Ticket></Ticket>
                 </div>
             </div>

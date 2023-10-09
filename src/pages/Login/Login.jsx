@@ -72,7 +72,6 @@ const Login = () => {
                 <button onClick={handleGoogleSingIn} className='btn bg-pink-500 text-white'>Google</button>
                 <button onClick={handleGithubSingIn} className='btn bg-pink-500 text-white'>Github</button>
             </p>
-            <div><Toaster position="top-center" /></div>
         </div>
     );
 };
