@@ -5,9 +5,7 @@ import banner from '../../../assets/images/banner1.jpeg'
 const TeamDetails = () => {
     const data = useLoaderData()
     const teamData = data.people
-    console.log(teamData)
     const { id } = useParams()
-    console.log(id);
     const [team, setTeam] = useState([])
     const { name, img, description, working_position } = team
     useEffect(() => {
@@ -30,7 +28,7 @@ const TeamDetails = () => {
                 </div>
             </div>
             <div className='flex justify-center items-center py-10' data-aos="fade-right"
-                data-aos-offset="300"
+                data-aos-offset="200"
                 data-aos-easing="ease-in-sine">
                 <div className="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                     <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">

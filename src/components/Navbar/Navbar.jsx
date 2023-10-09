@@ -80,11 +80,12 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 <div className="dropdown dropdown-end">
-                <label tabIndex={0} className="btn btn-ghost btn-circle avatar online">
-                    <div className="w-10 rounded-full">
+                <label tabIndex={0} className="">
+                    <div className="">
                             {
-                                user ? <img src={user?.photoURL} /> : 
-                                <img src={userImg} />
+                                user ? <div className='w-10 rounded-full'><img className='btn btn-ghost btn-circle avatar online' src={user?.photoURL} /></div> : 
+                                // <img src={userImg} />
+                                <button className='btn w-full'>Login</button>
 
                             }
                         </div>

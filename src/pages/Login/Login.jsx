@@ -4,7 +4,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import { AuthContext } from '../../provider/AuthProvider';
 
 const Login = () => {
-    const { signIn } = useContext(AuthContext)
+    const { signIn, signInGoogle, signInGithub } = useContext(AuthContext)
     const location = useLocation()
     const navigate = useNavigate()
 
@@ -18,8 +18,26 @@ const Login = () => {
                 toast.success('Logged successful!')
                 navigate(location?.state ? location.state : '/')
             })
-            .catch((error) => toast.error("An error occurred while logging in."))
+            .catch(() => toast.error("An error occurred while logging in."))
             
+    }
+    const handleGoogleSingIn = () => {
+        signInGoogle()
+            .then(() => {
+                toast.success('successful!')
+                navigate(location?.state ? location.state : '/')
+                
+            })
+            .catch(() => toast.error("Can't sign in to your Account"))
+    }
+    const handleGithubSingIn = () => {
+        signInGithub()
+            .then(() => {
+                toast.success('successful!')
+                navigate(location?.state ? location.state : '/')
+                
+            })
+            .catch(() => toast.error("Can't sign in to your Account"))
     }
 
     return (
@@ -51,11 +69,10 @@ const Login = () => {
                 <p className='text-center py-5'>Don't have an account <Link to='/register' className='text-blue-600 font-bold'>Register</Link></p>
             </div>
             <p className='flex justify-center items-center gap-2'>
-                <button className='btn bg-pink-500 text-white'>Google</button>
-                <button className='btn bg-pink-500 text-white'>Github</button>
-                <button className='btn bg-pink-500 text-white'>Twitter</button>
+                <button onClick={handleGoogleSingIn} className='btn bg-pink-500 text-white'>Google</button>
+                <button onClick={handleGithubSingIn} className='btn bg-pink-500 text-white'>Github</button>
             </p>
-            <div><Toaster /></div>
+            <div><Toaster position="top-center" /></div>
         </div>
     );
 };

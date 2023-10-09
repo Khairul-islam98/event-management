@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
-import { updateProfile } from 'firebase/auth';
+import { reload, updateProfile } from 'firebase/auth';
 import toast, { Toaster } from 'react-hot-toast';
 
 const Register = () => {
-    const { createUser } = useContext(AuthContext)
+    const { createUser, signInGoogle, signInGithub } = useContext(AuthContext)
     const location = useLocation()
     const navigate = useNavigate()
 
@@ -16,10 +16,10 @@ const Register = () => {
         const photo = form.get('photo')
         const email = form.get('email')
         const password = form.get('password')
-        if (!/(?=.*[A-Z])/.test(password) ) {
+        if (!/(?=.*[A-Z])/.test(password)) {
             toast.error("Password must contain at least one capital letter .")
             return
-        }else if(!/(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\-])/.test(password)){
+        } else if (!/(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\-])/.test(password)) {
             toast.error("one special character")
             return
         }
@@ -34,11 +34,30 @@ const Register = () => {
                 navigate(location?.state ? location.state : '/')
                 updateProfile(result.user, {
                     displayName: name,
-                    photoURL: photo
-                    
+                    photoURL: photo,
                 })
+                
+
             })
-            .catch(() => toast.error("Already registered"))
+            .catch(() => toast.error("Already registered"))        
+    }
+    const handleGoogleSingIn = () => {
+        signInGoogle()
+            .then(() => {
+                toast.success('successful!')
+                navigate(location?.state ? location.state : '/')
+                
+            })
+            .catch(() => toast.error("Can't sign in to your Account"))
+    }
+    const handleGithubSingIn = () => {
+        signInGithub()
+            .then(() => {
+                toast.success('successful!')
+                navigate(location?.state ? location.state : '/')
+                
+            })
+            .catch(() => toast.error("Can't sign in to your Account"))
     }
     return (
 
@@ -82,9 +101,9 @@ const Register = () => {
                 <p className='text-center py-5'>Already have an account? <Link to='/login' className='text-blue-600 font-bold'>Login</Link></p>
             </div>
             <p className='flex justify-center items-center gap-2'>
-                <button className='btn bg-pink-500 text-white'>Google</button>
-                <button className='btn bg-pink-500 text-white'>Github</button>
-                <button className='btn bg-pink-500 text-white'>Twitter</button>
+                <button onClick={handleGoogleSingIn} className='btn bg-pink-500 text-white'>Google</button>
+                <button onClick={handleGithubSingIn} className='btn bg-pink-500 text-white'>Github</button>
+                
             </p>
             <div><Toaster /></div>
         </div>
